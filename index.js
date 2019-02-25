@@ -4,6 +4,6 @@ function setup() {
 }
 
 function draw() {
-    box(50, 50, 50)
+    sphere(300, 5)
     translate(width / 2, 0, height / 2)
 }
