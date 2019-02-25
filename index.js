@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas(600, 600, WEGBL)
+    createCanvas(600, 600, WEBGL)
     background(51)
 }
 
