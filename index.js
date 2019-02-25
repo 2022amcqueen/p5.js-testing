@@ -1,4 +1,4 @@
-let i = 0;
+let i = 0
 
 function setup() {
     createCanvas(600, 600, WEBGL)
