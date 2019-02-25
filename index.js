@@ -1,1 +1,3 @@
-createCanvas(200, 200)
+function setup() {
+    createCanvas(200, 200)
+}
