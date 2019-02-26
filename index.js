@@ -4,17 +4,20 @@ function setup() {
 
 function draw() {
 	let rate = .01
-
+	
+	let xAngle = Math.cos(mouseX)
+	let yAngle = Math.sin(mouseY)
+	
 	background(200)
-
-	//normalMaterial()
-
 	
-	rotateX(frameCount * rate)
-	rotateY(frameCount * rate)
-	rotateZ(frameCount * rate)
+	rotateX(xAngle)
+	rotateY(yAngle)
 	
-	torus(1000, 100, 10)
+	//rotateX(frameCount * rate)
+	//rotateY(frameCount * rate)
+	//rotateZ(frameCount * rate)
+	
+	torus(1000, 100, 3)
 	
 	/*
 	for(let x = 0; x < 1000; x += 50) {
