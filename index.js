@@ -16,11 +16,11 @@ function draw() {
 	
 	for(let x = 0; x < 100; x++) {
 		for(let y = 0; y < 100; y++) {
-			//push()
 			box(50, 50, 50)
 			
-			translate(x * 50, y * 50, 0)
-			//pop()
+			push()
+				translate(x * 50, y * 50, 0)
+			pop()
 		}
 	}
 
