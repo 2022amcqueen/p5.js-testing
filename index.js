@@ -1,29 +1,29 @@
 function setup() {
-    createCanvas(600, 600, WEBGL)
+	createCanvas(600, 600, WEBGL)
 }
 
 function draw() {
-    let rate = .01
-    
-    background(200)
-    
-    //normalMaterial()
-    
-    
-   //rotateX(frameCount * rate)
-   //rotateY(frameCount * rate)
-   //rotateZ(frameCount * rate)
+	let rate = .01
 
-    push() // new scope
-	
-        for(let x = 0; x < 100; x++) {
+	background(200)
+
+	//normalMaterial()
+
+
+	//rotateX(frameCount * rate)
+	//rotateY(frameCount * rate)
+	//rotateZ(frameCount * rate)
+
+	push() // new scope
+
+		for(let x = 0; x < 100; x++) {
 			for(let z = 0; z < 100; z++) {
-            	box(150, 150, 150)
-            	translate(x * 150, 0, z * 150)
+				box(150, 150, 150)
+				translate(x * 150, 0, z * 150)
 			}
-        }
-	
-    pop()
-    
-    translate(width / 2, 0, height / 2)
+		}
+
+	pop()
+
+	translate(width / 2, 0, height / 2)
 }
