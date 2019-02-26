@@ -17,10 +17,10 @@ function draw() {
 	
 	for(let x = 0; x < 1000; x += 50) {
 		for(let z = 0; z < 1000; z += 50) {
-			let y = map(noise(x, y), 0, 1, 6000, 6000)
+			let y = noise(x, y)
 			
 			push()
-				translate(x, y, z)
+				translate(x, y * 100, z)
 				box(50, 50, 50)
 			pop()
 		}
