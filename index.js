@@ -9,13 +9,13 @@ function draw() {
     
     //normalMaterial()
     
-   // push()
+    push()
         rotateX(frameCount * rate)
         rotateY(frameCount * rate)
         rotateZ(frameCount * rate)
     
-        box(150, 150, 150)
-    //pop()
+        sphere(150)
+    pop()
     
     translate(width / 2, 0, height / 2)
 }
