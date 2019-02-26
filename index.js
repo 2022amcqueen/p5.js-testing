@@ -14,7 +14,7 @@ function draw() {
 	rotateY(frameCount * rate)
 	rotateZ(frameCount * rate)
 	
-	torus(1000, 100)
+	torus(1000, 100, 10)
 	
 	/*
 	for(let x = 0; x < 1000; x += 50) {
