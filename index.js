@@ -15,12 +15,12 @@ function draw() {
 	rotateZ(frameCount * rate)
 	
 	for(let x = 0; x < 10; x += 50) {
-		for(let y = 0; y < 10; y += 50) {
-			box(50, 50, 50)
-			
+		for(let y = 0; y < 10; y += 50) {		
 			push()
 				translate(x, y, 0)
 			pop()
+			
+			box(50, 50, 50)
 		}
 	}
 
