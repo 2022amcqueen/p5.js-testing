@@ -10,8 +10,10 @@ function draw() {
 	
 	background(200)
 	
-	rotateX(xAngle)
-	rotateY(yAngle)
+	push()
+		rotateX(xAngle)
+		rotateY(yAngle)
+	pop()
 	
 	//rotateX(frameCount * rate)
 	//rotateY(frameCount * rate)
