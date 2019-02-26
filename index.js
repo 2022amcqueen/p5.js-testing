@@ -14,7 +14,8 @@ function draw() {
         rotateY(frameCount * rate)
         rotateZ(frameCount * rate)
     
-        sphere(150)
+        box(150, 150, 150)
+        translate(frameCount * 150, 0, frameCount * 150)
     pop()
     
     translate(width / 2, 0, height / 2)
