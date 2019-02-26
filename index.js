@@ -1,5 +1,5 @@
 function setup() {
-	createCanvas(600, 600, WEBGL)
+	createCanvas(6000, 6000, WEBGL)
 }
 
 function draw() {
@@ -17,8 +17,8 @@ function draw() {
 	for(let x = 0; x < 1000; x += 50) {
 		for(let y = 0; y < 1000; y += 50) {		
 			push()
-				box(50, 50, 50)
 				translate(x, y, 0)
+				box(50, 50, 50)
 			pop()
 		}
 	}
