@@ -11,14 +11,16 @@ function draw() {
 
 	
 	rotateX(frameCount * rate)
-	rotateY(frameCount * rate)
-	rotateZ(frameCount * rate)
+	//rotateY(frameCount * rate)
+	//rotateZ(frameCount * rate)
 	
 	
 	for(let x = 0; x < 1000; x += 50) {
-		for(let z = 0; z < 1000; z += 50) {		
+		for(let z = 0; z < 1000; z += 50) {
+			let y = map(noise(x, y), 0, 1, 6000, 6000)
+			
 			push()
-				translate(x, 0, z)
+				translate(x, y, z)
 				box(50, 50, 50)
 			pop()
 		}
