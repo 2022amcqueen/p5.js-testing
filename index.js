@@ -14,7 +14,9 @@ function draw() {
 	//rotateY(frameCount * rate)
 	//rotateZ(frameCount * rate)
 	
+	torus(1000, 24)
 	
+	/*
 	for(let x = 0; x < 1000; x += 50) {
 		for(let z = 0; z < 1000; z += 50) {
 			push()
@@ -27,6 +29,7 @@ function draw() {
 			pop()
 		}
 	}
+	*/
 
 	//translate(width / 2, 0, height / 2)
 }
