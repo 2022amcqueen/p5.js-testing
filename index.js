@@ -5,10 +5,10 @@ function setup() {
 function draw() {
     background(200)
     
-    normalMaterial()
+    //normalMaterial()
     
     push()
-        sphere(150, 3)
+        sphere(150, 150)
         rotateX(frameCount * 1)
     pop()
     
