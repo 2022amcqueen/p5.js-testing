@@ -16,10 +16,15 @@ function draw() {
 	
 	for(let x = 0; x < 100; x++) {
 		for(let z = 0; z < 100; z++) {
-			push()
+			//push()
+				rotateX(frameCount * rate)
+				rotateY(frameCount * rate)
+				rotateZ(frameCount * rate)
+			
 				box(150, 150, 150)
+			
 				translate(x * 150, 0, z * 150)
-			pop()
+			//pop()
 		}
 	}
 
