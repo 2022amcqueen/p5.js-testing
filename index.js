@@ -9,13 +9,16 @@ function draw() {
     
     //normalMaterial()
     
-    push()
-        rotateX(frameCount * rate)
-        rotateY(frameCount * rate)
-        rotateZ(frameCount * rate)
     
-        box(150, 150, 150)
-        translate(frameCount * 150, 0, frameCount * 150)
+    rotateX(frameCount * rate)
+    rotateY(frameCount * rate)
+    rotateZ(frameCount * rate)
+
+    push()
+        for(let i = 0; i < 100; i++) {
+            box(150, 150, 150)
+            translate(i * 150, 0, i * 150)
+        }
     pop()
     
     translate(width / 2, 0, height / 2)
