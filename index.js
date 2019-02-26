@@ -15,11 +15,11 @@ function draw() {
 	rotateZ(frameCount * rate)
 	
 	for(let x = 0; x < 100; x++) {
-		for(let z = 0; z < 100; z++) {
+		for(let y = 0; y < 100; y++) {
 			//push()
 			box(50, 50, 50)
 			
-			translate(x * 150, 0, z * 150)
+			translate(x * 50, y * 50, 0)
 			//pop()
 		}
 	}
