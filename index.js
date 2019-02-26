@@ -1,12 +1,16 @@
 function setup() {
     createCanvas(600, 600, WEBGL)
-    background(51)
 }
 
 function draw() {
+    background(200)
+    
     normalMaterial()
-    sphere(150, 3)
+    
+    push()
+        sphere(150, 3)
+        rotateX(frameCount * 1)
+    pop()
     
     translate(width / 2, 0, height / 2)
-    rotate(frameCount)
 }
